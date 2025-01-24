@@ -1,8 +1,9 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * @modifier dong nguyen
+ * @student id 991756472
  */
 package cardgame;
+import java.util.Random;
 
 public class CardGame {
       
@@ -17,6 +18,14 @@ public class CardGame {
 
     private void generateHand() {
         // Complete this for step 3
+        Random rand = new Random();
+        
+        for (int i = 0; i < HAND_SIZE; i++) {
+            Card.Suit randomSuit = suits[rand.nextInt(suits.length)];
+            Card.Value randomValue = values[rand.nextInt(values.length)];
+            hand[i] = new Card(randomValue, randomSuit);
+        }
+        
     }
 
     public void printHand() {
