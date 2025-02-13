@@ -2,8 +2,8 @@ package cardgame;
 /*
  *
  * @author fagun
- * @modifier dong nguyen
- * @student id 991756472
+ * @modifier Adarsh singh kalsi
+ * @student id 991759737
  */
 
 public class Card {
